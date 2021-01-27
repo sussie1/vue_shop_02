@@ -7,8 +7,11 @@ import 'element-ui/lib/theme-chalk/index.css'
 import './assets/css/global.css'
 import './assets/fonts/iconfont.css'
 import axios from 'axios'
+// 树形表格插件
+import TreeTable from 'vue-table-with-tree-grid'
 
 Vue.config.productionTip = false
+Vue.component('tree-table', TreeTable)
 
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
 // 添加axios请求拦截器来添加token，以保证拥有获取数据的权限
